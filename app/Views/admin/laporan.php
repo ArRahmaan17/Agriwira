@@ -5,6 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Laporan</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <style type="text/css">
+    @media print{
+      body{
+        width: 1080px;
+      }
+      table {
+        border-color: rgb(175,179,176);
+        border: 10px;
+        min-width: 100%;
+      }
+      #debug-icon{
+        display: none;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="container-lg pt-5">

@@ -78,7 +78,7 @@
               </div>
             </div>
             <div class="d-flex">
-              <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
+              <a href="<?= base_url() ?>/orderoffline/" class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></a>
             </div>
           </li>
           <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
@@ -88,17 +88,17 @@
               </div>
               <div class="d-flex flex-column">
                 <h6 class="mb-1 text-dark text-sm">Barang Masuk</h6>
-                <span class="text-xs"><?= $allbarangmasuk ?> Barang Masuk<!-- , <span class="font-weight-bold">15 open</span></span> -->
+                <span class="text-xs"><?= $allbarangmasuk ?> Barang Masuk</span>
               </div>
             </div>
             <div class="d-flex">
-              <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
+              <a href="<?= base_url() ?>/barangmasuk" class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></a>
             </div>
           </li>
           <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
             <div class="d-flex align-items-center">
               <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
-                <i class="ni ni-app text-white text-sm opacity-10"></i>
+                <i class="ni ni-books text-white text-sm opacity-10"></i>
               </div>
               <div class="d-flex flex-column">
                 <h6 class="mb-1 text-dark text-sm">Laporan Harian </h6>
@@ -106,7 +106,7 @@
               </div>
             </div>
             <div class="d-flex">
-              <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
+              <a href="<?= base_url() ?>/laporan" target="_blank" class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></a>
             </div>
           </li>
         </ul>
