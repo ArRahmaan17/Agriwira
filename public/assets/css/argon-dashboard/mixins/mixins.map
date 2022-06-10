@@ -1,0 +1,20 @@
+{
+	"version": 3,
+	"file": "mixins.css",
+	"sources": [
+		"../../../scss/argon-dashboard/mixins/mixins.scss",
+		"../../../scss/argon-dashboard/mixins/_badge.scss",
+		"../../../scss/argon-dashboard/mixins/_hover.scss",
+		"../../../scss/argon-dashboard/mixins/_colored-shadows.scss",
+		"../../../scss/argon-dashboard/mixins/_social-buttons.scss"
+	],
+	"sourcesContent": [
+		"@import \"badge\";\n@import \"hover\";\n@import \"colored-shadows\";\n@import \"social-buttons\";\n",
+		"@mixin badge-variant($bg) {\n\tcolor: saturate(darken($bg, 10%), 10);\n    background-color: lighten($bg, 32%);\n\n  \t&[href] {\n\t    @include hover-focus {\n\t        color: color-yiq($bg);\n\t        text-decoration: none;\n\t        background-color: darken($bg, 12%);\n\t    }\n\t}\n}\n",
+		"\n@mixin hover() {\n  &:hover { @content; }\n}\n\n@mixin hover-focus() {\n  &:hover,\n  &:focus {\n    @content;\n  }\n}\n\n@mixin plain-hover-focus() {\n  &,\n  &:hover,\n  &:focus {\n    @content;\n  }\n}\n\n@mixin hover-focus-active() {\n  &:hover,\n  &:focus,\n  &:active {\n    @content;\n  }\n}\n",
+		"@mixin shadow-big-color($color){\n  // new box shadow optimized for Tablets and Phones\n  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, .14),\n              0 7px 10px -5px rgba($color, 0.4)\n}\n",
+		"// for social buttons\n@mixin social-buttons-color ($color, $state-color) {\n  background-color: $color;\n  color: $white;\n\n  &:focus,\n  &:hover {\n    background-color: $state-color;\n    color: $white;\n  }\n  &:active,\n  &:focus,\n  &:active:focus {\n    box-shadow: none;\n  }\n\n  &.btn-simple {\n    color: $state-color;\n    background-color: transparent;\n    background-image: none !important;\n    box-shadow: none;\n    border: none;\n\n    &:hover,\n    &:focus,\n    &:hover:focus,\n    &:active,\n    &:hover:focus:active {\n      color: $state-color;\n      background: transparent !important;\n      box-shadow: none !important;\n    }\n  }\n\n\n  &.btn-neutral {\n    color: $color;\n    background-color: $white;\n\n    &:hover,\n    &:focus,\n    &:active {\n      color: $state-color;\n    }\n  }\n}\n"
+	],
+	"names": [],
+	"mappings": ""
+}
